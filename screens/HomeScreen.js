@@ -1,5 +1,5 @@
 import { View, Text, Image, SafeAreaView, TouchableOpacity, Switch } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useRef, useState } from 'react'
 import { useColorScheme } from 'tailwindcss-react-native';
 import * as Animatable from 'react-native-animatable'
 import { useNavigation } from '@react-navigation/native';

@@ -24,7 +24,10 @@ import DebutScreen from '../screens/DebutScreen';
 import InterScreen from '../screens/InterScreen';
 import FinScreen from '../screens/FinScreen';
 import CadeauScreen from '../screens/CadeauScreen'
-
+import NumberScreen from '../screens/NumberScreen';
+import ChatScreen from '../screens/ChatScreen';
+import ProfileScreen from '../screens/ProfileScreen';
+import BottomScreen from '../screens/BottomScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,7 +35,7 @@ const Stack = createNativeStackNavigator();
 export default function AppNavigation() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Fonction'>
+      <Stack.Navigator initialRouteName='Bottom'>
         <Stack.Screen name="Home" options={{headerShown: false}} component={HomeScreen} />
         <Stack.Screen name="Welcome" options={{headerShown: false}} component={WelcomeScreen} />
         <Stack.Screen name="Login" options={{headerShown: false}} component={LoginScreen} />
@@ -55,6 +58,10 @@ export default function AppNavigation() {
         <Stack.Screen name="Inter" options={{headerShown: false}} component={InterScreen} />
         <Stack.Screen name="Fin" options={{headerShown: false}} component={FinScreen} />
         <Stack.Screen name="Cadeau" options={{headerShown: false}} component={CadeauScreen} />
+        <Stack.Screen name="Profile" options={{headerShown: false}} component={ProfileScreen} />
+        <Stack.Screen name="Chat" options={{headerShown: false}} component={ChatScreen} />
+        <Stack.Screen name="Number" options={{headerShown: false}} component={NumberScreen} />
+        <Stack.Screen name="Bottom" options={{headerShown: false}} component={BottomScreen} />
 </Stack.Navigator>
     </NavigationContainer>
   )
